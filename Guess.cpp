@@ -16,7 +16,9 @@ int main() {
     {
         cout << "Guess a number between " << MIN << " and " << MAX << ": ";
         cin >> guess;
-
+        
+        attempts =+ 1;
+        
         if (guess < number)
             cout << "Too low! Try again.\n";
         else if (guess > number)
@@ -24,7 +26,7 @@ int main() {
         else {
             cout << "Congratulations! You guessed the number " << number << " in " << attempts << " attempts.\n";
         }
-        attempts =+ 1;
+        
     }
 
     cout << "---------------------------------\n";
